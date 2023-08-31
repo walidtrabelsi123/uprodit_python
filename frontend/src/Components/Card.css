@@ -1,0 +1,200 @@
+.card {
+  border: 1px solid #b09a9a;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  width: calc(33.33% - 40px);
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Responsive styles for cards */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 40px);
+  }
+}
+
+.card img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.uprodit-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  margin: 40px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+}
+.footer-link {
+  color: rgb(13, 13, 13); 
+  transition: color 0.3s ease;
+  font-weight: bold; 
+}
+
+.footer-link:hover {
+  color: white; 
+}
+.footer {
+  
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #9ddecf;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.twitter-link {
+  background-color: #1DA1F2;
+  font-weight: bold;
+  size: 30px;
+  
+}
+
+.portfolio-link {
+  background-color: #FF9800;
+  font-weight: bold;
+  size: 30px;
+}
+
+.github-link {
+  background-color: #333;
+  font-weight: bold;
+  size: 30px;
+}
+.social-button {
+  background-color: rgb(255, 253, 253);
+  color: black;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 50%;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.social-button:hover {
+  background-color: #555;
+}
+
+.add-user-button {
+  background-color: #0056b3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 10px ;
+  color: white;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 40px;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.add-user-button {
+  background-color: #090a0b;
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+.add-user-button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+  /* Apply these styles only when the screen width is at least 768px */
+  .input-field {
+    margin: 25px;
+    font-size: 18px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .add-user-button {
+    padding: 12px 60px;
+    font-size: 22px;
+  }
+  .home-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .home-button {
+    text-decoration: none;
+    background-color: #090a0b;
+    color: #fff;
+    padding: 12px 60px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 10px; /* Adjust margin as needed */
+  }
+  
+  .home-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+}
+
+
