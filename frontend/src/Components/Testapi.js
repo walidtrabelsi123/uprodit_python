@@ -33,8 +33,7 @@ function Testapi() {
     const navigate = useNavigate();
 
 
-    const handleDelete = (item) => {
-        axios.delete(`http://127.0.0.1:5000/delete_user/${item.id}`)}
+   
 
     const openAddUserForm = () => {
         navigate('/addUserForm');
@@ -71,7 +70,7 @@ function Testapi() {
     
     useEffect(() => {
         
-        axios.get('http://127.0.0.1:5000/profiles') // Replace with your API endpoint
+        axios.get('http://127.0.0.1:5000/profiles') 
           .then(response => {
             setFilteredData(response.data);
             setData(response.data);
@@ -79,9 +78,7 @@ function Testapi() {
           .catch(error => {
             console.error('Error fetching data:', error);
           });
-      }, [handleDelete]); 
-
-      
+      }, []); 
     
     return (
     <div>
@@ -104,7 +101,7 @@ function Testapi() {
               </div>
          <ul className="card-list">
                      {filteredData.map(item => (
-                 <ProfileCard handleDelete={handleDelete} item={item} key={item.user_id} />
+                 <ProfileCard  item={item} key={item.user_id} />
   ))}
 </ul>
 

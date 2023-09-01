@@ -16,10 +16,6 @@ const ProfileCard = ({ item,handleDelete }) => {
                 ))}</p>
                 
             </div>
-            <button
-    onClick={()=>handleDelete(item)}>
-    delete
-</button>
         </li>
     );
 };
