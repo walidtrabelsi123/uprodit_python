@@ -160,7 +160,7 @@
 }
 
 @media (min-width: 768px) {
-  /* Apply these styles only when the screen width is at least 768px */
+  
   .input-field {
     margin: 25px;
     font-size: 18px;
@@ -186,15 +186,12 @@
     padding: 12px 60px;
     border-radius: 40px;
     cursor: pointer;
-    margin: 10px; /* Adjust margin as needed */
+    margin: 10px; 
   }
   
   .home-button:hover {
     background-color: #0056b3;
   }
-  
-  
-  
 }
 
 

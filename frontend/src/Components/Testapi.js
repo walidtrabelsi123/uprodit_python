@@ -33,9 +33,8 @@ function Testapi() {
     const navigate = useNavigate();
 
 
-const handleDelete = (item) => {
-    axios.delete(`http://127.0.0.1:5000/delete_user/${item.id}`
-    )}
+    const handleDelete = (item) => {
+        axios.delete(`http://127.0.0.1:5000/delete_user/${item.id}`)}
 
     const openAddUserForm = () => {
         navigate('/addUserForm');
@@ -63,7 +62,6 @@ const handleDelete = (item) => {
             (item.last_name_name && item.last_name.toLowerCase().includes(query)) || 
             (item.mail_address && item.mail_address.toLowerCase().includes(query)) || 
             (item.phone_number && item.phone_number.toString().includes(query)) 
-    
           );
         });
       
@@ -72,7 +70,7 @@ const handleDelete = (item) => {
       
     
     useEffect(() => {
-        // Make the API request when the component mounts
+        
         axios.get('http://127.0.0.1:5000/profiles') // Replace with your API endpoint
           .then(response => {
             setFilteredData(response.data);
